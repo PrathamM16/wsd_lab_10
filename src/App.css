@@ -1,0 +1,92 @@
+/* App.css */
+
+/* Reset some default margin and padding */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background color for the entire app */
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the container for the task list and form */
+.container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the task list */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style buttons */
+button {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Style the task form */
+form {
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type='text'] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type='submit'] {
+  margin-left: 10px;
+  background-color: #28a745;
+}
+
+button[type='submit']:hover {
+  background-color: #218838;
+}
+
+/* Center the form in the container */
+@media (max-width: 767px) {
+  form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input[type='text'] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  button[type='submit'] {
+    margin-left: 0;
+  }
+}
